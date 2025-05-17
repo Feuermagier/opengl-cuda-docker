@@ -3,7 +3,8 @@ WORKDIR /usr/local/app
 
 # general & opengl setup
 RUN apt-get update \
-    && apt-get install -y sudo nano vim curl wget git bash-completion coreutils build-essential pkg-config libglfw3 libglew2.2 libgl1 libglx-mesa0 libosmesa6 libegl1 libgles2 ffmpeg libsm6 libxext6 libopenblas-dev && apt-get clean \
+    && apt-get install -y sudo nano vim curl wget git bash-completion coreutils build-essential pkg-config libglfw3 libglew2.2 libgl1 libglx-mesa0 libosmesa6 libegl1 libgles2 ffmpeg libsm6 libxext6 libopenblas-dev libvulkan1
+    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # get uv
