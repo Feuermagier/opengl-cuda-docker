@@ -6,7 +6,7 @@
 # Build & Push
 
 ## EGL
-- `docker build -t feuermagier/cudagl_egl egl/`
+- `docker build -t feuermagier/cudagl_egl .`
 - `docker push feuermagier/cudagl_egl`
 
 <!-- ## OSMESA
